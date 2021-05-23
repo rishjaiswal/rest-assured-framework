@@ -14,5 +14,5 @@ TestNG is a testing framework and it provides the full control over the test cas
  Rest Assured is a group of java libraries which enables us to automate Rest API testing.
 
 ## ExtentReports
-Extent Reports is a customizable HTML report which can be integrated into Selenium WebDriver using TestNG frameworks with stepwise and pie chart representation.
+Extent Reports is a customizable HTML report using TestNG frameworks with stepwise and pie chart representation.
 

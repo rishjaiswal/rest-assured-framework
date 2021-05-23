@@ -1,0 +1,6 @@
+03:50:31.725 [main] INFO  com.rishabh.restframework.listeners.TestListener - I am onStart Method  : Test
+03:50:31.738 [main] INFO  com.rishabh.restframework.listeners.TestListener - The name of test case started is : shouldAnswerWithTrue
+03:50:31.738 [main] DEBUG com.rishabh.restframework.listeners.TestListener - Test Method name is : shouldAnswerWithTrue
+03:50:31.746 [main] DEBUG com.rishabh.restframework.AppTest - First Test Method
+03:50:31.747 [main] INFO  com.rishabh.restframework.listeners.TestListener - The name of the testcase passed is : shouldAnswerWithTrue
+03:50:31.794 [main] INFO  com.rishabh.restframework.listeners.TestListener - I am onFinish Method  : Test
