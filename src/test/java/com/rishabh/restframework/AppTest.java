@@ -9,7 +9,7 @@ import org.testng.Assert;
 /**
  * Unit test for simple App.
  */
-public class AppTest
+public class AppTest extends BaseTest
 
 {
 	private static Logger log = LogManager.getLogger(AppTest.class.getName());
