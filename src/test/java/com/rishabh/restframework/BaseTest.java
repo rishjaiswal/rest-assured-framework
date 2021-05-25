@@ -2,6 +2,9 @@ package com.rishabh.restframework;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import com.rishabh.restframework.utils.ConfigReader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -17,6 +20,7 @@ public class BaseTest
 	@BeforeSuite
 	public void setUp() {
 		log.debug("Before Suite Method");
+		ConfigReader.configReader();
 		Assert.assertTrue(true);
 	}
 
