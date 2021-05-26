@@ -26,21 +26,20 @@ public class EndPoint {
 		return response;
 	}
 
-	public static Response getAllDistrictsObject() {
-		String baseUrl = "https://cdn-api.co-vin.in/api/v2/admin/location/districts";
+	public static Response getAllDistrictsObject(String stateID) {
+		String baseUrl = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/";
 
 		RestAssured.baseURI = baseUrl;
 		RequestSpecification request = RestAssured.given();
 
 		request.header("user-agent", ConfigReader.getConfigData().get("user_agent"));
-		Response response = request.request(Method.GET, "/34");
+		Response response = request.request(Method.GET, stateID);
 		return response;
 
 	}
 
-	public static Response getAllAppointmentByDistrictObject() {
+	public static Response getAllAppointmentByDistrictObject(String district_ID) {
 
-		String district_ID = "695";
 		String baseUrl = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict";
 
 		RestAssured.baseURI = baseUrl;
@@ -54,9 +53,8 @@ public class EndPoint {
 
 	}
 
-	public static Response getAllAppointmentByPinObject() {
+	public static Response getAllAppointmentByPinObject(String pinCode) {
 
-		String pinCode = "209868";
 		String baseUrl = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin";
 
 		RestAssured.baseURI = baseUrl;
@@ -70,9 +68,8 @@ public class EndPoint {
 
 	}
 
-	public static Response getCertificateObject() {
+	public static Response getCertificateObject(String ID) {
 
-		String ID = "23874477876230";
 		String baseUrl = "https://cdn-api.co-vin.in/api/v2/registration/certificate/public";
 
 		RestAssured.baseURI = baseUrl;

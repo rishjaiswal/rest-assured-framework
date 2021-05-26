@@ -11,6 +11,8 @@ import com.rishabh.restframework.responses.pojo.Districts;
 import com.rishabh.restframework.responses.pojo.Sessions;
 import com.rishabh.restframework.responses.pojo.States;
 
+import java.util.Hashtable;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -23,8 +25,8 @@ public class CowinTest extends BaseTest
 {
 	private static Logger log = LogManager.getLogger(CowinTest.class.getName());
 
-	@Test(priority = 1)
-	public void getAllStates() {
+	@Test
+	public void getAllStates(Hashtable<String, String> data) {
 
 		Response response = EndPoint.getAllStatesObject();
 		Assert.assertEquals(response.getStatusCode(), 200);
@@ -39,28 +41,29 @@ public class CowinTest extends BaseTest
 		}
 
 		States states = response.as(States.class);
-		Assert.assertEquals(states.states.get(0).getState_name(), "UttarPradesh");
+		log.trace(states.states.get(0).getState_name());
+		Assert.assertEquals(states.states.get(0).getState_name(), data.get("Output"));
 
 	}
 
 	@Test
-	public void getAllDistricts() {
+	public void getAllDistricts(Hashtable<String, String> data) {
 
-		Response response = EndPoint.getAllDistrictsObject();
+		Response response = EndPoint.getAllDistrictsObject(data.get("Input"));
 		Assert.assertEquals(response.getStatusCode(), 200);
 		String responseBody = response.getBody().asString();
 		log.trace("Response Body is =>  " + responseBody);
 
 		Districts districts = response.as(Districts.class);
-
-		Assert.assertEquals(districts.districts.get(0).getDistrict_name(), "Agra");
+		log.trace(districts.districts.get(0).getDistrict_name());
+		Assert.assertEquals(districts.districts.get(0).getDistrict_name(), data.get("Output"));
 
 	}
 
 	@Test
-	public void getAllAppointmentByDistrict() {
+	public void getAllAppointmentByDistrict(Hashtable<String, String> data) {
 
-		Response response = EndPoint.getAllAppointmentByDistrictObject();
+		Response response = EndPoint.getAllAppointmentByDistrictObject(data.get("Input"));
 		Assert.assertEquals(response.getStatusCode(), 200);
 		String responseBody = response.getBody().asString();
 		log.trace("Response Body is =>  " + responseBody);
@@ -68,13 +71,14 @@ public class CowinTest extends BaseTest
 		Sessions sessions = response.as(Sessions.class);
 		log.trace("Number of slots available are : " + sessions.sessions.size());
 		log.trace(sessions.sessions.get(0).getDistrict_name());
+		Assert.assertEquals(sessions.sessions.get(0).getDistrict_name(), data.get("Output"));
 
 	}
 
 	@Test
-	public void getAllAppointmentByPin() {
+	public void getAllAppointmentByPin(Hashtable<String, String> data) {
 
-		Response response = EndPoint.getAllAppointmentByPinObject();
+		Response response = EndPoint.getAllAppointmentByPinObject(data.get("Input"));
 
 		Assert.assertEquals(response.getStatusCode(), 200);
 		String responseBody = response.getBody().asString();
@@ -82,15 +86,16 @@ public class CowinTest extends BaseTest
 
 		Sessions sessions = response.as(Sessions.class);
 		log.trace("Number of slots available are : " + sessions.sessions.size());
-		Assert.assertEquals(sessions.sessions.get(0).getAddress(), "HWC NEWAL BANGARMAU");
+		log.trace(sessions.sessions.get(0).getAddress());
+		Assert.assertEquals(sessions.sessions.get(0).getAddress(), data.get("Output"));
 	}
 
 	@Test
-	public void getCertificate() {
+	public void getCertificate(Hashtable<String, String> data) {
 
-		Response response = EndPoint.getCertificateObject();
+		Response response = EndPoint.getCertificateObject(data.get("Input"));
 
-		Assert.assertEquals(response.getStatusCode(), 200);
+		Assert.assertEquals(response.getStatusCode(), data.get("Output"));
 		String responseBody = response.getBody().asString();
 		log.trace("Response Body is =>  " + responseBody);
 	}

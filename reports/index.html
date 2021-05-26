@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -50,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">May 26, 2021 02:45:23 am</span>
+                    <span class="badge badge-primary">May 27, 2021 03:45:32 am</span>
                 </a>
             </li>
         </ul>
@@ -126,8 +132,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">shouldAnswerWithTrue</p>
-							<p class="duration text-sm">0h 0m 0s+1ms</p>
-							<span class="datetime">02:45:24 am</span>
+							<p class="duration text-sm">0h 0m 0s+2ms</p>
+							<span class="datetime">03:45:34 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -135,9 +141,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">shouldAnswerWithTrue</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:24</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:24</span>
-									<span class='badge badge-default'>0h 0m 0s+1ms</span>
+									<span class='badge badge-success'>05.27.2021 03:45:34</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:34</span>
+									<span class='badge badge-default'>0h 0m 0s+2ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -154,7 +160,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>2:45:24 am</td>
+				<td>3:45:34 am</td>
 				<td>
 						Test Passed
 				</td>
@@ -174,8 +180,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">getAllAppointmentByDistrict</p>
-							<p class="duration text-sm">0h 0m 2s+545ms</p>
-							<span class="datetime">02:45:24 am</span>
+							<p class="duration text-sm">0h 0m 3s+987ms</p>
+							<span class="datetime">03:45:34 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -183,9 +189,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">getAllAppointmentByDistrict</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:24</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:26</span>
-									<span class='badge badge-default'>0h 0m 2s+545ms</span>
+									<span class='badge badge-success'>05.27.2021 03:45:34</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:38</span>
+									<span class='badge badge-default'>0h 0m 3s+987ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -202,7 +208,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>2:45:26 am</td>
+				<td>3:45:38 am</td>
 				<td>
 						Test Passed
 				</td>
@@ -212,28 +218,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="3"
+				<li class="test-item"  status="fail" test-id="3"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">getAllAppointmentByPin</p>
-							<p class="duration text-sm">0h 0m 0s+247ms</p>
-							<span class="datetime">02:45:26 am</span>
+							<p class="name">getAllAppointmentByDistrict</p>
+							<p class="duration text-sm">0h 0m 0s+817ms</p>
+							<span class="datetime">03:45:38 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">getAllAppointmentByPin</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:26</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:27</span>
-									<span class='badge badge-default'>0h 0m 0s+247ms</span>
+									<h5 class="test-status text-fail">getAllAppointmentByDistrict</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:38</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:39</span>
+									<span class='badge badge-default'>0h 0m 0s+817ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -249,10 +255,45 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>2:45:27 am</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>3:45:39 am</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Kanpur Nagar] but found [Kanpur Dehat]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.rishabh.restframework.CowinTest.getAllAppointmentByDistrict(CowinTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
@@ -269,19 +310,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">getAllDistricts</p>
-							<p class="duration text-sm">0h 0m 0s+244ms</p>
-							<span class="datetime">02:45:27 am</span>
+							<p class="name">getAllAppointmentByDistrict</p>
+							<p class="duration text-sm">0h 0m 0s+990ms</p>
+							<span class="datetime">03:45:39 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">getAllDistricts</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:27</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:27</span>
-									<span class='badge badge-default'>0h 0m 0s+244ms</span>
+									<h5 class="test-status text-pass">getAllAppointmentByDistrict</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:39</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:40</span>
+									<span class='badge badge-default'>0h 0m 0s+990ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -298,7 +339,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>2:45:27 am</td>
+				<td>3:45:40 am</td>
 				<td>
 						Test Passed
 				</td>
@@ -317,19 +358,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">getCertificate</p>
-							<p class="duration text-sm">0h 0m 1s+229ms</p>
-							<span class="datetime">02:45:27 am</span>
+							<p class="name">getAllAppointmentByPin</p>
+							<p class="duration text-sm">0h 0m 0s+744ms</p>
+							<span class="datetime">03:45:40 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">getCertificate</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:27</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:28</span>
-									<span class='badge badge-default'>0h 0m 1s+229ms</span>
+									<h5 class="test-status text-fail">getAllAppointmentByPin</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:40</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:40</span>
+									<span class='badge badge-default'>0h 0m 0s+744ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -346,15 +387,15 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>2:45:28 am</td>
+				<td>3:45:40 am</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [401]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [400]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:372)
 	at org.testng.Assert.assertEquals(Assert.java:382)
-	at com.rishabh.restframework.CowinTest.getCertificate(CowinTest.java:93)
+	at com.rishabh.restframework.CowinTest.getAllAppointmentByPin(CowinTest.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -400,19 +441,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">getAllStates</p>
-							<p class="duration text-sm">0h 0m 0s+242ms</p>
-							<span class="datetime">02:45:28 am</span>
+							<p class="name">getAllAppointmentByPin</p>
+							<p class="duration text-sm">0h 0m 0s+776ms</p>
+							<span class="datetime">03:45:40 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">getAllStates</h5>
-									<span class='badge badge-success'>05.26.2021 02:45:28</span>
-									<span class='badge badge-danger'>05.26.2021 02:45:28</span>
-									<span class='badge badge-default'>0h 0m 0s+242ms</span>
+									<h5 class="test-status text-fail">getAllAppointmentByPin</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:40</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:41</span>
+									<span class='badge badge-default'>0h 0m 0s+776ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -429,15 +470,277 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>2:45:28 am</td>
+				<td>3:45:41 am</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [UttarPradesh] but found [Andaman and Nicobar Islands]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at org.testng.Assert.assertEquals(Assert.java:382)
+	at com.rishabh.restframework.CowinTest.getAllAppointmentByPin(CowinTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">getAllAppointmentByPin</p>
+							<p class="duration text-sm">0h 0m 0s+735ms</p>
+							<span class="datetime">03:45:41 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">getAllAppointmentByPin</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:41</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:42</span>
+									<span class='badge badge-default'>0h 0m 0s+735ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>3:45:42 am</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at org.testng.Assert.assertEquals(Assert.java:382)
+	at com.rishabh.restframework.CowinTest.getAllAppointmentByPin(CowinTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">getAllDistricts</p>
+							<p class="duration text-sm">0h 0m 1s+452ms</p>
+							<span class="datetime">03:45:42 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">getAllDistricts</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:42</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:43</span>
+									<span class='badge badge-default'>0h 0m 1s+452ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>3:45:43 am</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">getAllStates</p>
+							<p class="duration text-sm">0h 0m 0s+757ms</p>
+							<span class="datetime">03:45:43 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">getAllStates</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:43</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:44</span>
+									<span class='badge badge-default'>0h 0m 0s+757ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>3:45:44 am</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="10"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">getAllStates</p>
+							<p class="duration text-sm">0h 0m 0s+734ms</p>
+							<span class="datetime">03:45:44 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">getAllStates</h5>
+									<span class='badge badge-success'>05.27.2021 03:45:44</span>
+									<span class='badge badge-danger'>05.27.2021 03:45:45</span>
+									<span class='badge badge-default'>0h 0m 0s+734ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>3:45:45 am</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Delhi] but found [Andaman and Nicobar Islands]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at com.rishabh.restframework.CowinTest.getAllStates(CowinTest.java:42)
+	at com.rishabh.restframework.CowinTest.getAllStates(CowinTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -515,7 +818,7 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">java.lang.AssertionError</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="duration text-sm">5 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -537,9 +840,9 @@
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>02:45:27 am</td>
-									<td class='linked' test-id='5'>
-										getCertificate
+									<td>03:45:38 am</td>
+									<td class='linked' test-id='3'>
+										getAllAppointmentByDistrict
 									</td>
 								</tr>
 								<tr>
@@ -548,8 +851,41 @@
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>02:45:28 am</td>
+									<td>03:45:40 am</td>
+									<td class='linked' test-id='5'>
+										getAllAppointmentByPin
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>03:45:40 am</td>
 									<td class='linked' test-id='6'>
+										getAllAppointmentByPin
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>03:45:41 am</td>
+									<td class='linked' test-id='7'>
+										getAllAppointmentByPin
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>03:45:44 am</td>
+									<td class='linked' test-id='10'>
 										getAllStates
 									</td>
 								</tr>
@@ -588,12 +924,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='66.667%'>
-						<b>4</b> tests passed
+					<div><small data-tooltip='50%'>
+						<b>5</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='33.333%'><b>2</b> tests failed, 
+						<small data-tooltip='50%'><b>5</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -611,9 +947,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='66.667%'><b>4</b> events passed</small></div>
+					<div><small data-tooltip='50%'><b>5</b> events passed</small></div>
 					<div>
-						<small data-tooltip='33.333%'><b>2</b> events failed, 
+						<small data-tooltip='50%'><b>5</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -628,10 +964,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">6</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">10</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>66.67%</span>
+							<span>50.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -647,7 +983,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">May 26, 2021 02:45:23 am</h4>
+							<h4 class="font-weight-light mt-4">May 27, 2021 03:45:32 am</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -663,7 +999,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 4s+803ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 12s+564ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -720,14 +1056,14 @@
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 6,
-		passParent: 4,
-		failParent: 2,
+	    parentCount: 10,
+		passParent: 5,
+		failParent: 5,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 2,
+		exceptionsParent: 5,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -748,9 +1084,9 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 6,
-		passEvents: 4,
-		failEvents: 2,
+		eventsCount: 10,
+		passEvents: 5,
+		failEvents: 5,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -762,7 +1098,7 @@
 </script>
 <script>
 	var timeline = {
-	        "shouldAnswerWithTrue":0.001,"getAllAppointmentByDistrict":2.545,"getAllAppointmentByPin":0.247,"getAllDistricts":0.244,"getCertificate":1.229,"getAllStates":0.242
+	        "shouldAnswerWithTrue":0.002,"getAllAppointmentByDistrict":3.987,"getAllAppointmentByDistrict":0.817,"getAllAppointmentByDistrict":0.99,"getAllAppointmentByPin":0.744,"getAllAppointmentByPin":0.776,"getAllAppointmentByPin":0.735,"getAllDistricts":1.452,"getAllStates":0.757,"getAllStates":0.734
 	};
 </script>
                 </div>
