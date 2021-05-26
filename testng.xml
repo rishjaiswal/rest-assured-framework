@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<listeners>
 	<listener class-name ="com.rishabh.restframework.listeners.TestListener"/>
+	<listener class-name="com.rishabh.restframework.listeners.TestAnnotation"></listener>
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>

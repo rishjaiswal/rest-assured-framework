@@ -12,5 +12,8 @@ public class Constants {
 	public static String EXCELPATH = RESOURCESPATH + File.separator + "testdata";
 	public static final String REPORTPATH = System.getProperty("user.dir") + File.separator + "reports" + File.separator
 			+ "index.html";
+	
+	public static final String RUNMANAGERSHEET = "RUNMANAGER";
+	public static final String TESTDATASHEETNAME = "TESTDATA";
 
 }
