@@ -36,6 +36,7 @@ public class TestListener implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		log.error("The name of the testcase failed is : " + result.getName());
 		extentTest.get().fail(result.getThrowable());
+		extentTest.get().log(Status.FAIL, getTestMethodName() + " Test is failed " + result.getThrowable());
 
 	}
 
@@ -43,15 +44,20 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		log.debug("The name of the testcase Skipped is : " + result.getName());
+		extentTest.get().log(Status.SKIP, result.getName() + " Test is Skipped" +  result.getThrowable());
 	}
 
 	// When Test case get Started, this method is called.
 	@Override
 	public void onTestStart(ITestResult result) {
 		log.info("The name of test case started is : " + result.getName());
-		setTestMethodName(result.getMethod().getMethodName());
+		if (result.getMethod().getDescription() == null)
+			setTestMethodName(result.getMethod().getMethodName());
+		else
+			setTestMethodName(result.getMethod().getDescription());
 		log.debug("Test Method name is : " + getTestMethodName());
 		test = extent.createTest(getTestMethodName());
+		test.log(Status.INFO, getTestMethodName() + " Test has Started");
 		extentTest.set(test);
 	}
 
@@ -59,7 +65,7 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		log.info("The name of the testcase passed is : " + result.getName());
-		extentTest.get().log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, getTestMethodName() + " Test Passed Successfully");
 	}
 
 	@Override
