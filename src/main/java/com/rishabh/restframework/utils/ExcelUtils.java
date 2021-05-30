@@ -159,6 +159,8 @@ public class ExcelUtils {
 			temp = cell.getStringCellValue();
 		} else if (cell.getCellType() == CellType.NUMERIC || cell.getCellType() == CellType.FORMULA) {
 			temp = String.valueOf(cell.getNumericCellValue());
+			//To convert 209868.0 to 209868
+			temp = String.valueOf((int) Double.parseDouble(temp));
 		} else if (cell.getCellType() == CellType.BOOLEAN) {
 			temp = String.valueOf(cell.getBooleanCellValue());
 		} else if (cell.getCellType() == CellType.ERROR) {

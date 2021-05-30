@@ -41,8 +41,18 @@ public class CowinTest extends BaseTest
 		}
 
 		States states = response.as(States.class);
-		log.trace(states.states.get(0).getState_name());
-		Assert.assertEquals(states.states.get(0).getState_name(), data.get("Output"));
+		if (states.states.size() > 0) {
+			log.trace(states.states.get(0).getState_name());
+			Assert.assertEquals(states.states.get(0).getState_name(), data.get("Output"));
+			String state_list = "";
+			log.debug("State list for getAllStates() : ");
+			for (State state : states.states)
+				state_list += " " + state.getState_name();
+			log.debug(state_list);
+		} else {
+			log.error("Empty Response for getAllStates()");
+			Assert.assertFalse(false, "Empty Response for getAllStates()");
+		}
 
 	}
 
@@ -55,9 +65,18 @@ public class CowinTest extends BaseTest
 		log.trace("Response Body is =>  " + responseBody);
 
 		Districts districts = response.as(Districts.class);
-		log.trace(districts.districts.get(0).getDistrict_name());
-		Assert.assertEquals(districts.districts.get(0).getDistrict_name(), data.get("Output"));
-
+		if (districts.districts.size() > 0) {
+			log.trace(districts.districts.get(0).getDistrict_name());
+			Assert.assertEquals(districts.districts.get(0).getDistrict_name(), data.get("Output"));
+			String district_list = "";
+			log.debug("District List for getAllDistricts() " + data.get("Input") + " : ");
+			for (District district : districts.districts)
+				district_list += " " + district.getDistrict_name();
+			log.debug(district_list);
+		} else {
+			log.error("Empty Response for getAllDistricts() " + data.get("Input"));
+			Assert.assertFalse(false, "Empty Response for getAllDistricts() " + data.get("Input"));
+		}
 	}
 
 	@Test
@@ -70,8 +89,18 @@ public class CowinTest extends BaseTest
 
 		Sessions sessions = response.as(Sessions.class);
 		log.trace("Number of slots available are : " + sessions.sessions.size());
-		log.trace(sessions.sessions.get(0).getDistrict_name());
-		Assert.assertEquals(sessions.sessions.get(0).getDistrict_name(), data.get("Output"));
+		if (sessions.sessions.size() > 0) {
+			log.trace(sessions.sessions.get(0).getDistrict_name());
+			Assert.assertEquals(sessions.sessions.get(0).getDistrict_name(), data.get("Output"));
+			log.debug("Sessions for getAllAppointmentByDistrict() " + data.get("Input") + " : ");
+			for (Session session : sessions.sessions) {
+				log.debug(session.getName() + " " + session.getAddress() + " " + session.getPincode() + " "
+						+ session.getAvailable_capacity() + " " + session.vaccine + " " + session.fee);
+			}
+		} else {
+			log.error("No Sessions for getAllAppointmentByDistrict " + data.get("Input"));
+			Assert.assertFalse(true, "No Sessions for getAllAppointmentByDistrict() " + data.get("Input"));
+		}
 
 	}
 
@@ -86,8 +115,19 @@ public class CowinTest extends BaseTest
 
 		Sessions sessions = response.as(Sessions.class);
 		log.trace("Number of slots available are : " + sessions.sessions.size());
-		log.trace(sessions.sessions.get(0).getAddress());
-		Assert.assertEquals(sessions.sessions.get(0).getAddress(), data.get("Output"));
+		if (sessions.sessions.size() > 0) {
+			log.trace(sessions.sessions.get(0).getAddress());
+			Assert.assertEquals(sessions.sessions.get(0).getAddress(), data.get("Output"));
+			log.debug("Sessions for getAllAppointmentByPin() " + data.get("Input") + " : ");
+			for (Session session : sessions.sessions) {
+				log.debug(session.getName() + " " + session.getAddress() + " " + session.getPincode() + " "
+						+ session.getAvailable_capacity() + " " + session.vaccine + " " + session.fee);
+			}
+		} else {
+			log.error("No Sessions for getAllAppointmentByPin " + data.get("Input"));
+			Assert.assertFalse(true, "No Sessions for getAllAppointmentByPin() " + data.get("Input"));
+		}
+
 	}
 
 	@Test
